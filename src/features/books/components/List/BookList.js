@@ -1,7 +1,7 @@
-import './BookList.css';
+import styles from './BookList.module.css';
 import {BookCard} from './BookCard';
 import {useEffect, useState} from 'react';
-import {Spinner} from '../../../components/Elements';
+import {Spinner} from '../../../../components/Elements';
 
 const availableOrders = {isbn: 'Isbn', title: 'Titre', author: 'Auteur⋅rice'}
 
@@ -32,9 +32,9 @@ export const BookList = () => {
 
     return (
         <>
-            <header className="book-list-header">
+            <header className={styles.header}>
                 <h1> Livres</h1>
-                <p className="book-list-order">
+                <p className={styles.order}>
                     Trier par
                     <select onChange={(e) => setOrder(e.target.value)}>
                         <option value="id">Date d'ajout</option>
@@ -51,7 +51,7 @@ export const BookList = () => {
             {isLoading ? (
                 <Spinner/>
             ) : (
-                <div className="book-list">
+                <div className={styles.list}>
                     {books.map((book, index) => (
                         <BookCard key={`${book.isbn}-${index}`} book={book}/>
                     ))}

@@ -1,0 +1,75 @@
+.back {
+    color: var(--heart-color);
+}
+
+.back:hover {
+    text-decoration: none;
+}
+
+.header {
+    display: flex; justify-content: space-between; align-content: center; align-items: center;
+    margin: 10px 0 30px; padding: 20px 0; border-bottom: 2px solid #999;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.info {
+    display: flex; font-size: 1.5rem;
+}
+
+.meta {
+    padding: 0 20px;
+}
+
+.meta *:first-child {
+    margin-top: 0;
+}
+
+.meta *:last-child {
+    margin-bottom: 0;
+}
+
+.description {
+    font-size: 1.4rem;
+}
+
+.comment-sheets {
+    margin: 20px 0; border-radius: 10px; background-color: white;
+}
+
+.sheet-list {
+    display: flex; margin: 0 0 10px; padding: 10px 10px 0; list-style-type: none;
+    background: #eee; border-top-left-radius: 8px; border-top-right-radius: 8px;
+}
+
+.sheet-list > * {
+    margin: 0; padding: 10px 15px; border-top-left-radius: 8px; border-top-right-radius: 10px;
+    color: #666; cursor: pointer;
+}
+
+.current-sheet {
+    position: relative; background-color: white; border-color: white;
+    font-weight: bold; color: black;
+}
+
+.sheet-view {
+    padding: 20px 25px;
+}
+
+@media only screen and (max-width: 990px) {
+    .header,
+    .info {
+        display: block;
+    }
+
+    .header .wishlist {
+        margin-top: 20px; width: 100%;
+    }
+
+    .meta {
+        margin: 20px 0; padding: 0;
+    }
+
+}

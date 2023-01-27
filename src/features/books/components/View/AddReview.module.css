@@ -1,0 +1,47 @@
+:root {
+    --error: #c20000;
+    --success: #8db46b;
+}
+
+.added {
+    padding: 10px 15px;
+    font-size: .8rem; font-weight: bold; color: white;
+    border-radius: 5px; background-color: var(--success);
+}
+
+.error {
+    font-size: .8rem; font-weight: bold; color: var(--error);
+}
+
+.field {
+    display: block;
+}
+
+.field+.field {
+    margin-top: 20px;
+}
+
+.label-text {
+    display: block; margin: 0 2px 7px;
+    font-size: .8rem; color: #999;
+}
+
+.input {
+    display: block; padding: 10px 15px; width: 100%; border: 2px solid #999; border-radius: 5px;
+    background-color: white;
+    transition: all 200ms linear;
+}
+
+.has-error {
+    border-color: var(--error);
+}
+
+.submit {
+    display: block; margin-top: 20px; padding: 10px 20px; width: 100%; background-color: #333333; border: none; border-radius: 5px;
+    font-size: 1.2rem; font-weight: bold; color: white;
+    transition: all 200ms ease-in; cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #666;
+}

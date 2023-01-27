@@ -1,0 +1,18 @@
+.card {
+    display: flex; flex-direction: column; gap: 15px;
+    padding: 15px; box-shadow: 0 0 20px #333; background: #fafafa; border-radius: 5px;
+    color: black; text-decoration: none;
+}
+
+.card h3,
+.card p {
+    margin: 0;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.wishlist {
+    width: 100%;
+}

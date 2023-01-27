@@ -1,0 +1,18 @@
+.wishlist {
+    display: flex; justify-content: center; align-items: center; gap: 5px;
+    padding: 5px 10px; background-color: white; border: 2px solid var(--heart-color); border-radius: 5px;
+    font-size: 1rem; color: var(--heart-color); cursor: pointer; white-space: nowrap;
+    transition: all 200ms ease-in;
+}
+
+.wishlist:hover {
+    background-color: var(--heart-color); color: white;
+}
+
+.already-in {
+    background-color: var(--heart-color); color: white;
+}
+
+.icon{
+    font-size: 1.2rem;
+}

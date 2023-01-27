@@ -1,5 +1,5 @@
-import './Spinner.css';
+import styles from './Spinner.module.css';
 
 export const Spinner = () => (
-    <p className="spinner">°</p>
+    <p className={styles.spinner}>°</p>
 );
